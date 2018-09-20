@@ -45,7 +45,7 @@ double airDist = getAirDistance( originLatitude,
                        originLongitude,
                        destinationLatitude,
                        destinationLongitude);
-airDist = round(airDist*1000)/100;
+airDist = round(airDist*100)/100;
 printf("Your air distance is: %lf\n", airDist);
 if (fabs(airDist - actual) <= E) {
   printf("Passed\n");
